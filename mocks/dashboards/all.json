@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Direct / None",
+    "visitors": 238150
+  },
+  {
+    "name": "Google",
+    "visitors": 24443
+  },
+  {
+    "name": "GitHub",
+    "visitors": 1976
+  },
+  {
+    "name": "DuckDuckGo",
+    "visitors": 1284
+  },
+  {
+    "name": "Twitter",
+    "visitors": 1131
+  },
+  {
+    "name": "Reddit",
+    "visitors": 622
+  },
+  {
+    "name": "Bing",
+    "visitors": 522
+  },
+  {
+    "name": "odoo.com",
+    "visitors": 423
+  },
+  {
+    "name": "search.brave.com",
+    "visitors": 348
+  }
+]

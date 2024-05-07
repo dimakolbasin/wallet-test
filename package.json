@@ -1,0 +1,45 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "share": "ssh -R 80:localhost:3000 localhost.run",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "dependencies": {
+    "@nuxt/eslint": "^0.3.10",
+    "@nuxt/ui": "^2.15.1",
+    "@pinia/nuxt": "^0.5.1",
+    "@typescript-eslint/parser": "^7.8.0",
+    "axios": "^1.6.8",
+    "chart.js": "^4.4.2",
+    "nuxt": "^3.11.2",
+    "nuxt-socket-io": "^3.0.13",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.21",
+    "vue-chartjs": "^5.3.1",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "npm:@nuxt/devtools-edge@latest",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^9.1.1",
+    "nuxt-svgo": "^4.0.0",
+    "postcss": "^8.4.38",
+    "pre-commit": "^1.2.2",
+    "sass": "^1.74.1",
+    "tailwind-scrollbar": "^3.1.0",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
+  }
+}

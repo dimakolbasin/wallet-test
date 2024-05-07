@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Filter Menu: Open",
+    "events": 45014,
+    "visitors": 15433,
+    "conversion_rate": 5.6
+  },
+  {
+    "name": "Visit /register",
+    "events": 7461,
+    "visitors": 6082,
+    "conversion_rate": 2.2
+  },
+  {
+    "name": "Visit /blog*",
+    "events": 7456,
+    "visitors": 4903,
+    "conversion_rate": 1.8
+  },
+  {
+    "name": "Visit /sites/new",
+    "events": 5356,
+    "visitors": 4014,
+    "conversion_rate": 1.5
+  },
+  {
+    "name": "Visit /activate",
+    "events": 3227,
+    "visitors": 2727,
+    "conversion_rate": 1.0
+  },
+  {
+    "name": "Signup",
+    "events": 1837,
+    "visitors": 1782,
+    "conversion_rate": 0.6
+  },
+  {
+    "name": "Visit /billing/upgrade-success",
+    "events": 587,
+    "visitors": 582,
+    "conversion_rate": 0.2
+  },
+  {
+    "name": "Newsletter signup",
+    "events": 18,
+    "visitors": 17,
+    "conversion_rate": 0.0
+  }
+]

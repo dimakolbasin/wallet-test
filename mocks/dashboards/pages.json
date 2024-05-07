@@ -1,0 +1,38 @@
+[
+  {
+    "name": "/:dashboard",
+    "visitors": 187556
+  },
+  {
+    "name": "/sites",
+    "visitors": 97595
+  },
+  {
+    "name": "/",
+    "visitors": 53741
+  },
+  {
+    "name": "/login",
+    "visitors": 22567
+  },
+  {
+    "name": "/share/:dashboard",
+    "visitors": 9208
+  },
+  {
+    "name": "/:dashboard/settings/general",
+    "visitors": 8434
+  },
+  {
+    "name": "/settings",
+    "visitors": 8122
+  },
+  {
+    "name": "/plausible.io",
+    "visitors": 7232
+  },
+  {
+    "name": "/register",
+    "visitors": 6120
+  }
+]

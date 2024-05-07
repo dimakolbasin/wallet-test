@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Chrome",
+    "percentage": 59.1,
+    "visitors": 162233
+  },
+  {
+    "name": "Safari",
+    "percentage": 25.6,
+    "visitors": 70259
+  },
+  {
+    "name": "Firefox",
+    "percentage": 10.9,
+    "visitors": 30055
+  },
+  {
+    "name": "Microsoft Edge",
+    "percentage": 3.7,
+    "visitors": 10277
+  },
+  {
+    "name": "Opera",
+    "percentage": 0.3,
+    "visitors": 882
+  },
+  {
+    "name": "Samsung Browser",
+    "percentage": 0.2,
+    "visitors": 678
+  },
+  {
+    "name": "Mobile App",
+    "percentage": 0.2,
+    "visitors": 609
+  },
+  {
+    "name": "Yandex Browser",
+    "percentage": 0.1,
+    "visitors": 255
+  },
+  {
+    "name": "(not set)",
+    "percentage": 0.0,
+    "visitors": 106
+  }
+]
