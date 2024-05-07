@@ -45,8 +45,5 @@ export default defineNuxtConfig({
 			tailwindcss: {},
 			autoprefixer: {}
 		}
-	},
-	generate: {
-		fallback: '404.html'
 	}
 })
