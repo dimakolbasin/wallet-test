@@ -1,5 +1,15 @@
 # Wallet
 
+## Deployment
+
+```bash
+# yarn
+yarn generate
+
+## Development Server
+firebase deploy
+```
+
 ## Setup
 
 Make sure to install the dependencies:

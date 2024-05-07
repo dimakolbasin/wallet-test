@@ -5,7 +5,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "generate": "nuxt generate -- --preset=firebase",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "share": "ssh -R 80:localhost:3000 localhost.run",
