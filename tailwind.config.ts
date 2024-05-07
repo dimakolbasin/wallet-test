@@ -14,7 +14,7 @@ export default <Partial<Config>>{
 		container: {
 			center: true,
 			padding: {
-				DEFAULT: '1rem',
+				DEFAULT: '1rem'
 			},
 			screens: {
 				sm: '100%',

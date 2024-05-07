@@ -7,9 +7,9 @@ const state = (): State => ({
 	logsCurrency: [],
 	socket: null,
 	ordersBook: {
-		'BTCUSDT': { bids: [], asks: [] },
-		'BNBBTC': { bids: [], asks: [] },
-		'ETHBTC': { bids: [], asks: [] }
+		BTCUSDT: { bids: [], asks: [] },
+		BNBBTC: { bids: [], asks: [] },
+		ETHBTC: { bids: [], asks: [] }
 	},
 	isLoading: false,
 	lastUpdateId: 0,

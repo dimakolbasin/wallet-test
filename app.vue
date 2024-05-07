@@ -1,15 +1,12 @@
 <script setup lang="ts">
-
 useSeoMeta({
 	title: 'Wallet'
 })
-
-
 </script>
 
 <template>
 	<div class="container">
-    <MainHeader />
-    <RouterView />
+		<MainHeader />
+		<RouterView />
 	</div>
 </template>
