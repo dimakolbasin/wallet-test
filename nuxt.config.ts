@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
 	vite: {
 		vue: {
-			isProduction: false,
+			isProduction: true,
 			script: {
 				defineModel: true,
 				propsDestructure: true
@@ -45,5 +45,8 @@ export default defineNuxtConfig({
 			tailwindcss: {},
 			autoprefixer: {}
 		}
+	},
+	generate: {
+		fallback: '404.html'
 	}
 })

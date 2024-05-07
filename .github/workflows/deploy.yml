@@ -17,6 +17,8 @@ jobs:
       # Pick your own package manager and build script
       - run: yarn install
       - run: yarn build --preset github_pages
+      - run: mkdir -p .output/public && cp -r dist/* .output/public  # Копируем результат сборки в .output/public
+      - run: touch .output/public/.nojekyll  # Создаем файл .nojekyll в .output/public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
@@ -39,3 +41,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+        with:
+          deployment_source: artifact  # Используем артефакт, загруженный на предыдущем шаге
+      - run: gh-pages -d dist -t true  # Деплой на GitHub Pages с использованием gh-pages
