@@ -1,42 +1,58 @@
-# https://github.com/actions/deploy-pages#usage
-name: Deploy to GitHub Pages
+# Название workflow
+name: Deploy Nuxt.js App to GitHub Pages
+
+# Триггеры для запуска workflow
 on:
-  workflow_dispatch:
   push:
     branches:
       - main
+  workflow_dispatch:
+
+# Задачи workflow
 jobs:
+
+  # Задача для сборки проекта
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - run: corepack enable
-      - uses: actions/setup-node@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: "20"
-      # Pick your own package manager and build script
-      - run: yarn install
-      - run: yarn build --preset github_pages
-      - run: mkdir -p .output/public && cp -r dist/* .output/public  # Копируем результат сборки в .output/public
-      - run: touch .output/public/.nojekyll  # Создаем файл .nojekyll в .output/public
+          node-version: '16'
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build Nuxt.js app
+        run: yarn build
+
+      - name: Prepare deployment directory
+        run: |
+          rm -rf .output
+          mkdir -p .output/public
+          cp -r dist/* .output/public
+          touch .output/public/.nojekyll
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./.output/public
-  # Deployment job
+          path: .output/public
+
+  # Задача для деплоя на GitHub Pages
   deploy:
-    # Add a dependency to the build job
     needs: build
-    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
-    # Deploy to the github_pages environment
+      pages: write
+      id-token: write
     environment:
-      name: github_pages
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    # Specify runner + deployment step
     runs-on: ubuntu-latest
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
